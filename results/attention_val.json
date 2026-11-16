@@ -1,0 +1,123 @@
+{
+  "modele_final": {
+    "nom": "4. Attention + GloVe",
+    "modele": "BiLSTMAttention",
+    "dropout": 0.3,
+    "dim_cachee": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "glove": true,
+    "meilleure_epoch": 6,
+    "micro_f1_05": 0.8595768848502059,
+    "micro_f1_seuils": 0.8598954032480044,
+    "macro_f1_seuils": 0.6532366784301418
+  },
+  "seuils": [
+    0.5,
+    0.5,
+    0.25,
+    0.35,
+    0.35,
+    0.4,
+    0.2,
+    0.2
+  ],
+  "historique": [
+    {
+      "epoch": 1,
+      "perte_train": 0.22746636301549553,
+      "micro_f1_val": 0.8125741399762753
+    },
+    {
+      "epoch": 2,
+      "perte_train": 0.14201345104575883,
+      "micro_f1_val": 0.8284320969410374
+    },
+    {
+      "epoch": 3,
+      "perte_train": 0.11953133550122937,
+      "micro_f1_val": 0.8375
+    },
+    {
+      "epoch": 4,
+      "perte_train": 0.10022952646029853,
+      "micro_f1_val": 0.8555127656539724
+    },
+    {
+      "epoch": 5,
+      "perte_train": 0.08301718888236857,
+      "micro_f1_val": 0.855036855036855
+    },
+    {
+      "epoch": 6,
+      "perte_train": 0.06774719666487569,
+      "micro_f1_val": 0.8595768848502059
+    },
+    {
+      "epoch": 7,
+      "perte_train": 0.05409863532278499,
+      "micro_f1_val": 0.857384203857525
+    },
+    {
+      "epoch": 8,
+      "perte_train": 0.04381252881313894,
+      "micro_f1_val": 0.8557409224730128
+    },
+    {
+      "epoch": 9,
+      "perte_train": 0.036186974693188496,
+      "micro_f1_val": 0.850465989706496
+    }
+  ],
+  "experiences": [
+    {
+      "nom": "1. d\u00e9part",
+      "dropout": 0.3,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": false,
+      "meilleure_epoch": 12,
+      "micro_f1_05": 0.8410433780083586,
+      "micro_f1_seuils": 0.8222132362852136,
+      "macro_f1_seuils": 0.5453547472730085
+    },
+    {
+      "nom": "2. dropout 0.5",
+      "dropout": 0.5,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": false,
+      "meilleure_epoch": 8,
+      "micro_f1_05": 0.8266705573387803,
+      "micro_f1_seuils": 0.7537751154374142,
+      "macro_f1_seuils": 0.47307954121345686
+    },
+    {
+      "nom": "3. GloVe",
+      "dropout": 0.3,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": true,
+      "meilleure_epoch": 8,
+      "micro_f1_05": 0.8606363762678894,
+      "micro_f1_seuils": 0.8631109873276702,
+      "macro_f1_seuils": 0.6779196144562654
+    },
+    {
+      "nom": "4. Attention + GloVe",
+      "modele": "BiLSTMAttention",
+      "dropout": 0.3,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": true,
+      "meilleure_epoch": 6,
+      "micro_f1_05": 0.8595768848502059,
+      "micro_f1_seuils": 0.8598954032480044,
+      "macro_f1_seuils": 0.6532366784301418
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Environnement Python local
+.venv/
+
+# Copies automatiques de Jupyter et caches Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

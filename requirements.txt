@@ -1,0 +1,10 @@
+torch
+transformers
+datasets
+scikit-learn
+pandas
+matplotlib
+seaborn
+iterative-stratification
+tqdm
+jupyter

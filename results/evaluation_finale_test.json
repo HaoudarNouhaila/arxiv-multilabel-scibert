@@ -1,0 +1,71 @@
+{
+  "modele_final": "SciBERT (train + plus)",
+  "seuil": 0.5,
+  "micro_f1_test": 0.8996085011185683,
+  "ic95_micro_f1_test": [
+    0.8908710180579374,
+    0.9071051260212901
+  ],
+  "tous_les_modeles": [
+    {
+      "modèle": "TF-IDF",
+      "entraînement": "train",
+      "micro-F1 val": 0.8581,
+      "micro-F1 test": 0.8611,
+      "macro-F1 val": 0.5116,
+      "macro-F1 test": 0.5053,
+      "subset acc. test": 0.7804,
+      "hamming test": 0.0394
+    },
+    {
+      "modèle": "TF-IDF (train + plus)",
+      "entraînement": "train + plus",
+      "micro-F1 val": 0.8736,
+      "micro-F1 test": 0.8718,
+      "macro-F1 val": 0.6053,
+      "macro-F1 test": 0.6055,
+      "subset acc. test": 0.7905,
+      "hamming test": 0.0368
+    },
+    {
+      "modèle": "BiLSTM + GloVe",
+      "entraînement": "train",
+      "micro-F1 val": 0.8606,
+      "micro-F1 test": 0.8596,
+      "macro-F1 val": 0.6406,
+      "macro-F1 test": 0.6529,
+      "subset acc. test": 0.7627,
+      "hamming test": 0.0422
+    },
+    {
+      "modèle": "BiLSTM + attention + GloVe",
+      "entraînement": "train",
+      "micro-F1 val": 0.8596,
+      "micro-F1 test": 0.8597,
+      "macro-F1 val": 0.6104,
+      "macro-F1 test": 0.5985,
+      "subset acc. test": 0.7663,
+      "hamming test": 0.0412
+    },
+    {
+      "modèle": "SciBERT",
+      "entraînement": "train",
+      "micro-F1 val": 0.8953,
+      "micro-F1 test": 0.8951,
+      "macro-F1 val": 0.7645,
+      "macro-F1 test": 0.7557,
+      "subset acc. test": 0.8123,
+      "hamming test": 0.0315
+    },
+    {
+      "modèle": "SciBERT (train + plus)",
+      "entraînement": "train + plus",
+      "micro-F1 val": 0.9035,
+      "micro-F1 test": 0.8996,
+      "macro-F1 val": 0.7915,
+      "macro-F1 test": 0.7661,
+      "subset acc. test": 0.8176,
+      "hamming test": 0.0301
+    }
+  ]
+}

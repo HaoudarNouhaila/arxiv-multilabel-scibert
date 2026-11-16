@@ -1,0 +1,119 @@
+{
+  "modele_final": {
+    "nom": "BiLSTM final (GloVe)",
+    "dropout": 0.3,
+    "dim_cachee": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "glove": true,
+    "meilleure_epoch": 8,
+    "micro_f1_05": 0.7766990291262136,
+    "micro_f1_seuils": 0.7856075410966777,
+    "macro_f1_seuils": 0.77863926377576
+  },
+  "seuils": [
+    0.3,
+    0.4,
+    0.45,
+    0.55,
+    0.35,
+    0.6,
+    0.5,
+    0.65
+  ],
+  "historique": [
+    {
+      "epoch": 1,
+      "perte_train": 0.4116664754845229,
+      "micro_f1_val": 0.6441122475740887
+    },
+    {
+      "epoch": 2,
+      "perte_train": 0.30390250133556224,
+      "micro_f1_val": 0.7111931119311193
+    },
+    {
+      "epoch": 3,
+      "perte_train": 0.2523054200019767,
+      "micro_f1_val": 0.740052063964299
+    },
+    {
+      "epoch": 4,
+      "perte_train": 0.2216002557523723,
+      "micro_f1_val": 0.7485394655065258
+    },
+    {
+      "epoch": 5,
+      "perte_train": 0.19786484792037565,
+      "micro_f1_val": 0.7660287081339713
+    },
+    {
+      "epoch": 6,
+      "perte_train": 0.1751346493411921,
+      "micro_f1_val": 0.7741162372678251
+    },
+    {
+      "epoch": 7,
+      "perte_train": 0.15283611196222535,
+      "micro_f1_val": 0.771483437349976
+    },
+    {
+      "epoch": 8,
+      "perte_train": 0.13213214232284481,
+      "micro_f1_val": 0.7766990291262136
+    },
+    {
+      "epoch": 9,
+      "perte_train": 0.11392988185215579,
+      "micro_f1_val": 0.7735737160479184
+    },
+    {
+      "epoch": 10,
+      "perte_train": 0.09803638450047225,
+      "micro_f1_val": 0.7646169940718354
+    },
+    {
+      "epoch": 11,
+      "perte_train": 0.08450183851360056,
+      "micro_f1_val": 0.766928011404134
+    }
+  ],
+  "experiences": [
+    {
+      "nom": "1. d\u00e9part",
+      "dropout": 0.3,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": false,
+      "meilleure_epoch": 11,
+      "micro_f1_05": 0.7571547322170764,
+      "micro_f1_seuils": 0.7628123184195236,
+      "macro_f1_seuils": 0.7557272489823297
+    },
+    {
+      "nom": "2. dropout 0.5",
+      "dropout": 0.5,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": false,
+      "meilleure_epoch": 20,
+      "micro_f1_05": 0.7455746990795374,
+      "micro_f1_seuils": 0.7581001045174777,
+      "macro_f1_seuils": 0.7502059720244454
+    },
+    {
+      "nom": "3. GloVe",
+      "dropout": 0.3,
+      "dim_cachee": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "glove": true,
+      "meilleure_epoch": 8,
+      "micro_f1_05": 0.7766990291262136,
+      "micro_f1_seuils": 0.7856075410966777,
+      "macro_f1_seuils": 0.77863926377576
+    }
+  ]
+}
