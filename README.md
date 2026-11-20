@@ -126,11 +126,11 @@ Tous les modèles sortent 8 probabilités indépendantes (sigmoïde). Un groupe 
 | Expérience | micro-F1 validation | Décision |
 |---|---|---|
 | SciBERT, 4 epochs (référence v2) | 0,8953 | — |
-| 6 epochs au lieu de 4 | 0,8950 (meilleure epoch : 4) | ❌ surapprentissage après la 4ᵉ epoch (la perte de validation remonte) |
-| + 19 673 articles d'entraînement | **0,9035** | ✅ gardé, +0,8 point |
-| Ensemble SciBERT + TF-IDF | +0,07 point au mieux (estimation honnête) | ❌ gain négligeable |
-| Moyenne de 2 SciBERT | +0,03 point | ❌ gain négligeable |
-| Seuils optimisés par groupe | −0,3 point (estimation honnête) | ❌ je garde 0,5 |
+| 6 epochs au lieu de 4 | 0,8950 (meilleure epoch : 4) |  surapprentissage après la 4ᵉ epoch (la perte de validation remonte) |
+| + 19 673 articles d'entraînement | **0,9035** |  gardé, +0,8 point |
+| Ensemble SciBERT + TF-IDF | +0,07 point au mieux (estimation honnête) |  gain négligeable |
+| Moyenne de 2 SciBERT | +0,03 point |  gain négligeable |
+| Seuils optimisés par groupe | −0,3 point (estimation honnête) |  je garde 0,5 |
 
 **Courbe d'apprentissage (TF-IDF, validation, seuil 0,5)** : avec 25 %, 50 %, 75 % et 100 % du train, j'obtiens
 0,833 → 0,844 → 0,850 → 0,858. Le score montait encore : c'est pour cela que j'ai ajouté des données.
