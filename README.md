@@ -206,21 +206,3 @@ projet_nlp/
 SciBERT pèse environ 440 Mo, donc ses poids ne sont pas inclus. Ses probabilités sur la validation et le test,
 elles, sont dans `results/`. Elles suffisent pour refaire l'évaluation finale.
 
----
-
-## 9. Reproduire
-
-1. **Environnement local** : Python 3.11, puis `pip install -r requirements.txt`.
-   Versions utilisées : torch 2.15 (CPU), transformers 5.23, datasets 5.2, scikit-learn 1.9, pandas 3.1, iterative-stratification 0.1.9.
-2. **Évaluation finale seule** : les données, les modèles BiLSTM et les probabilités SciBERT sont inclus.
-   Il suffit d'exécuter `notebooks/08_evaluation_finale.ipynb`.
-3. **Tout refaire depuis le début** :
-   1. Sur Kaggle, avec le dataset arXiv de Cornell University : `v2-01-echantillon`, puis placer le fichier obtenu dans `data/raw/`.
-   2. En local : `01_exploration` → `02_pretraitement` → `03_baseline`.
-   3. Sur Kaggle, GPU T4 x2, avec un dataset contenant `train/val/test.csv` et `src/metrics.py`
-      (plus GloVe 6B pour le BiLSTM) : `v2-02-train-plus`, `v2-04b-bilstm`, `v2-05-scibert`, `v2-07-scibert-plus-donnees`.
-      Ranger ensuite les sorties dans `data/processed/`, `models/` et `results/`.
-   4. En local : `08_evaluation_finale`.
-
-Durées indicatives sur 2 GPU T4 : SciBERT environ 36 minutes (train seul) et environ 1 h 40 (train + plus) ;
-BiLSTM environ 20 minutes (4 variantes entraînées).
